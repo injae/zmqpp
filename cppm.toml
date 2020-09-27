@@ -1,0 +1,15 @@
+[package]
+   name = "zmqpp"
+   version = "4.2.0"
+   description = "zmq cpp library"
+
+[lib]
+    name = "zmq"
+    source = ["src/zmqpp/.*"]
+
+[bin]
+    name = "zmq-client"
+    source = ["src/client/.*"]
+
+[dependencies]
+    ZeroMQ="4.3.3"
